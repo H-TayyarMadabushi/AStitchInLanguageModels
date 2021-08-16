@@ -47,8 +47,16 @@ We used 🤗 Transformers ([this script](https://github.com/huggingface/transfor
 ```
 
 
+
 ## Task 2: Idiomaticity Representation
 
+Task 2 is the more challenging task of creating sentence embeddings that accurately represent sentences regardless of whether or not they contain idiomatic expressions. This is tested using Semantic Text Similarity (STS) and the metric for this task is the Spearman Rank correlation between models' output STS between sentences containing idiomatic expressions and the same sentences with the idiomatic expressions replaced by non-idiomatic paraphrases (which capture the correct meaning of the MWEs). 
+
+Please see the paper for more details on the task. 
+
+The data associated with this task are available in the Task 2 dataset folder. 
+
+The scripts and pre-trained models associated with this task are available in the Task 2 scripts folder.  
 
 ## Extended Noun Compound Senses Dataset
 
