@@ -7,7 +7,7 @@ This dataset and associated tasks were introduced in our EMNLP 2021 paper "AStit
 This is a novel dataset consisting of: 
 * Naturally occurring sentences (and two surrounding sentences) containing potentially idiomatic MWEs annotated with a fine-grained set of meanings: compositional meaning, idiomatic meaning(s), proper noun and "meta usage". See Tasks ([Task 1](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#task-1-idiomaticity-detection), [Task 2](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#task-2-idiomaticity-representation)) for details and Raw Data Section for complete data.
 * Data in both Portuguese and English
-* Paraphrases for each meaning of each MWE; (See [Noun Compound Paraphrase Dataset](#Noun-Compound-Paraphrase-Dataset))
+* Paraphrases for each meaning of each MWE; (See [Extended Noun Compound Senses Dataset](#Extended-Noun-Compound-Senses-Dataset))
 
 In addition, we use this dataset to define two tasks:
 * These tasks are aimed at evaluating i) a model’s ability to detect idiomatic use ([Task 1](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#task-1-idiomaticity-detection)), and ii) the effectiveness of sentence embeddings in representing idiomaticity ([Task 2](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#task-2-idiomaticity-representation)).
@@ -49,4 +49,12 @@ We used 🤗 Transformers ([this script](https://github.com/huggingface/transfor
 
 ## Task 2: Idiomaticity Representation
 
-## Noun Compound Paraphrase Dataset
+
+## Extended Noun Compound Senses Dataset
+
+We also provide an [Extended Noun Compound Senses dataset](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Extended_Noun_Compound_Senses_Dataset) that is highly granular. This data differs from previous sense datasets in that: 
+ * it provides all possible senses (unlike previous datasets that provided one,
+ * we ensure that meanings provided are as close to the original phrase as possible to ensure that this dataset is an adversarial dataset, 
+ * we highlight purely compositional noun compounds. 
+
+Please follow the link above for more details. 
