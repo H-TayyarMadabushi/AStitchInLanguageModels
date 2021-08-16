@@ -11,3 +11,9 @@ The dataset contains the following columns:
 * Non-Literal Meaning 2	(Non-literal meaning if it exists "None" otherwise")
 * Non-Literal Meaning 3	(Non-literal meaning if it exists "None" otherwise")
 * Data Split (Train/Dev/Test)
+
+
+This data differs from previous MWE sense datasets in that: 
+ * it provides all possible senses,
+ * we ensure that meanings provided are as close to the original phrase as possible to ensure that this dataset is an adversarial dataset, 
+ * we highlight purely compositional noun compounds. 
