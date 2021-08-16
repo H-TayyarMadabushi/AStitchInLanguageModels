@@ -22,7 +22,7 @@ The first task we propose is designed to evaluate the extent to which models can
 
 The data associated with this Task can be found in [this folder](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Task1). Data is split into zero-shot, one-shot and few-shot data in both Portuguese and English. Please see the paper for a detailed description of the task and methods. 
 
-We used 🤗 Transformers ([this script](https://github.com/huggingface/transformers/blob/62ba3b6b43975e759851336b566852252be00669/examples/pytorch/text-classification/run_glue.py)) for training with the following hyperparameters. 
+We used 🤗 Transformers ([this script](https://github.com/huggingface/transformers/blob/62ba3b6b43975e759851336b566852252be00669/examples/pytorch/text-classification/run_glue.py)) for training with the following hyperparameters. Further details are available in the paper. 
 
 
 ```bash
@@ -53,8 +53,16 @@ We used 🤗 Transformers ([this script](https://github.com/huggingface/transfor
 ## Extended Noun Compound Senses Dataset
 
 We also provide an [Extended Noun Compound Senses dataset](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Extended_Noun_Compound_Senses_Dataset) that is highly granular. This data differs from previous sense datasets in that: 
- * it provides all possible senses (unlike previous datasets that provided one,
+ * it provides all possible senses,
  * we ensure that meanings provided are as close to the original phrase as possible to ensure that this dataset is an adversarial dataset, 
  * we highlight purely compositional noun compounds. 
 
-Please follow the link above for more details. 
+Please see the [associated data folder](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Extended_Noun_Compound_Senses_Dataset) for more details. 
+
+## Raw Data
+
+You can download the raw annotation data from [this folder](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/TaskIndependentData). 
+
+We strongly recommend that you use the Task datasets described above if you are working on related tasks. We also recommend that you use the associated data splits to keep results comparable. 
+
+If you working on an unrelated task, you can adapt the raw data provided. The data format is described in the [data folder](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/TaskIndependentData). 
