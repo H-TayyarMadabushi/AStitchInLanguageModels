@@ -61,7 +61,7 @@ Please see the [associated data folder](https://github.com/H-TayyarMadabushi/ASt
 
 ## Raw Data
 
-You can download the raw annotation data from [this folder](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/TaskIndependentData). 
+You can download the raw annotated data from [this folder](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/TaskIndependentData). 
 
 We strongly recommend that you use the Task datasets described above if you are working on related tasks. We also recommend that you use the associated data splits to keep results comparable. 
 
