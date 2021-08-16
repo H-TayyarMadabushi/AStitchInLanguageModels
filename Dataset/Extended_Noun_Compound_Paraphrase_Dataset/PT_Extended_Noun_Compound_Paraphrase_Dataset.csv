@@ -1,0 +1,114 @@
+Multiword Expression,Literal Meaning,Non-Literal Meaning 1,Non-Literal Meaning 2,Non-Literal Meaning 3,Data Split
+sala cirúrgica,sala de cirurgia,None,None,None,test
+ano-novo,reveillon,None,None,None,test
+cheiro-verde,odor esverdeado,tempero,None,None,test
+roleta russa,roda moscovita,jogo de azar,None,None,test
+centro comercial,congregação mercantil,shopping,None,None,test
+sexto sentido,sexta percepção,intuição,None,None,test
+primeira necessidade,exigência inicial,indispensável,None,None,test
+processo seletivo,seleção,None,None,None,test
+núcleo atômico,cerne nuclear,núcleo,None,None,test
+comida caseira,comida feita em casa,None,None,None,test
+rede social,malha comunitária,rede de contatos,None,None,test
+ovelha negra,borrega preta,diferente,None,None,test
+sinal verde,símbolo esverdeado,aprovação,None,None,test
+livro aberto,volume acessível,este é transparente,None,None,test
+ponto forte,lugar duro,qualidade marcante,momento em que há alta chance,None,test
+leite integral,laticínio íntegro,isto é o leite,None,None,test
+planta baixa,planta pequena,projeto de arquitetura,None,None,test
+amigo oculto,companheiro escondido,brincadeira de presentear,None,None,test
+agente secreto,espião,None,None,None,test
+sangue frio,plasma gelado,sem escrúpulos,tranquilidade quando sob pressão,None,test
+segundo plano,nível secundário,prioridade secundária,executar de fundo,None,dev
+desfile militar,parada militar,None,None,None,dev
+sangue quente,plasma cálido,raiva impulsiva,cheio de ardor,None,dev
+alto-falante,caixa de som,None,None,None,dev
+alta temporada,elevada época,época de férias,None,None,dev
+disco voador,círculo voante,ovni,None,None,dev
+primeira-dama,mulher inicial,esposa de quem governa,None,None,dev
+caixeiro viajante,empregado viageiro,vendedor ambulante,None,None,dev
+vista grossa,visão espessa,fingir que não viu,None,None,dev
+fila indiana,linha índia,fila,None,None,dev
+buraco negro,furo preto,horizonte de eventos,desaparecimento,None,dev
+alarme falso,engano,None,None,None,dev
+governo federal,governo,None,None,None,dev
+regime político,sistema político,None,None,None,dev
+bode expiatório,bode castigado,culpado injustamente,None,None,dev
+fio condutor,cordão transmissor,tema principal,None,None,dev
+braço direito,membro destro,ajudante principal,None,None,dev
+pastor alemão,pegureiro germânico,cachorro,None,None,dev
+colégio militar,escola bélica,escola militar,None,None,dev
+papel higiênico,papel,None,None,None,dev
+acampamento militar,acampamento do exército,None,None,None,train
+companhia aérea,empresa aérea,None,None,None,train
+deputado federal,política,None,None,None,train
+amigo secreto,companheiro oculto,brincadeira de presentear,None,None,train
+farinha integral,farinha,None,None,None,train
+batata-doce,batata,None,None,None,train
+secretária eletrônica,ajudante digital,gravador de mensagens de ligações,None,None,train
+direitos humanos,estes são benefícios humanais,estes são direitos,None,None,train
+primeira infância,meninice inicial,primeiros seis anos de vida,None,None,train
+poção mágica,elixir com feitiçaria,solução milagrosa,None,None,train
+efeito especial,execução incomum,efeitos de imagem e som,None,None,train
+livre-docente,professor liberto,professor,professor,None,train
+classe executiva,categoria administradora,primeira classe,None,None,train
+carro-forte,viatura dura,carro blindado,None,None,train
+febre amarela,pirexia amarelada,doença,None,None,train
+algodão-doce,algodoeiro açucarado,tipo de doce,None,None,train
+gelo-seco,geada enxuta,fumaça,gelo,None,train
+sentença judicial,decisão judicial,None,None,None,train
+coração partido,alma quebrada,decepção amorosa,situação triste,None,train
+trabalho escravo,tarefa prisioneira,trabalho forçado,None,None,train
+máquina virtual,computador virtual,None,None,None,train
+cordas vocais,estes são cabos orais,estas são pregas vocais,None,None,train
+carne branca,bife alvo,carne de peixe,None,None,train
+elefante branco,paquiderme alvo,obras públicas sem utilidade,None,None,train
+pé-frio,pata fresca,azarado,None,None,train
+salão paroquial,salão da igreja,None,None,None,train
+terceira idade,terça vida,velhice,None,None,train
+circuito integrado,contorno incluído,circuito,None,None,train
+caixa-preta,arca negra,segredo,gravador aeronáutico,None,train
+pau-mandado,madeiro ordenado,submisso,None,None,train
+longa-metragem,medição comprida,filme,None,None,train
+ar condicionado,climatizador,None,None,None,train
+bebida alcoólica,bebida com álcool,None,None,None,train
+segundas intenções,estes são propósitos secundários,objetivos ocultos,None,None,train
+escada rolante,escada automática,None,None,None,train
+exame laboratorial,exame de laboratório,None,None,None,train
+primeiro plano,nível inicial,destaque,primeiro momento,None,train
+mau-olhado,observado ruim,inveja,None,None,train
+lugar-comum,local público,clichê,local de identificação,lugar de identificação,train
+caixa-forte,arca resistente,cofre,None,None,train
+tapete vermelho,alcatifa encarnada,entrada de evento,prestígio,None,train
+café colonial,cafeeiro colonialista,café da manhã,restaurante colonial,None,train
+má-fé,crença ruim,maldade,tratamento desonesto,None,train
+gripe aviária,constipação aviculária,gripe,None,None,train
+pão-duro,broa rígida,mão de vaca,None,None,train
+disco rígido,círculo rijo,hd,None,None,train
+relógio analógico,temporizador análogo,relógio tradicional,None,None,train
+círculo virtuoso,circunferência honrada,ciclo virtuoso,None,None,train
+massa cinzenta,matéria alvacenta,cérebro,None,None,train
+mão-fechada,palmo cerrado,pão duro,None,None,train
+curto-circuito,contorno limitado,problema elétrico,colapso,None,train
+carta aberta,correspondência acessível,carta pública,None,None,train
+mercado negro,negócio preto,mercado ilegal,None,None,train
+ônibus executivo,ônibus de alta classe,None,None,None,train
+sistema político,regime político,None,None,None,train
+carne vermelha,bife encarnado,carne bovina,None,None,train
+quinta categoria,quinta classe,má qualidade,None,None,train
+pronto-socorro,assistência rápida,ala de assistência imediata,None,None,train
+estrela cadente,astro descente,meteoro,breve,None,train
+vinho branco,champanhe alvo,vinho,None,None,train
+terceira pessoa,terço indivíduo,perspectiva externa,indivíduo na terceira posição,None,train
+tartaruga-marinha,tartaruga do mar,None,None,None,train
+trabalho braçal,tarefa braquial,trabalho manual,None,None,train
+conta-corrente,contagem ordinária,conta bancária,None,None,train
+paraíso fiscal,éden tributário,refúgio fiscal,None,None,train
+círculo vicioso,circunferência viciada,ciclo vicioso,None,None,train
+centro espírita,centro religioso,None,None,None,train
+alta-costura,elevada sutura,roupa exclusivas,conjunto dos grandes costureiros,None,train
+montanha-russa,monte moscovita,brinquedo,altos e baixos,None,train
+príncipe encantado,príncipe enfeitiçado,homem perfeito,homem dos sonhos,None,train
+relógio biológico,temporizador orgânico,relógio interno,None,None,train
+amor-próprio,auto estima,None,None,None,train
+gato-pingado,felino chuviscado,pessoa,None,None,train

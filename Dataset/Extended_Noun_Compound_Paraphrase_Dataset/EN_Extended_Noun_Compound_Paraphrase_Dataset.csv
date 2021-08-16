@@ -1,0 +1,224 @@
+Multiword Expression,Literal Meaning,Non-Literal Meaning 1,Non-Literal Meaning 2,Non-Literal Meaning 3,Data Split
+mailing list,address list,None,None,None,test
+elbow room,joint room,space,freedom,None,test
+call centre,answering service,None,None,None,test
+dream ticket,fantasy ticket,ideal opportunity,None,None,test
+sacred cow,divine cow,above criticism ,None,None,test
+disability insurance,disability assistance,None,None,None,test
+skin tone,skin color,None,None,None,test
+sugar daddy,carbohydrate daddy,benefactor,None,None,test
+wedding day,marriage date,None,None,None,test
+peace conference,peace meeting,None,None,None,test
+think tank,armored tank,research group,None,None,test
+silver lining,grey lining,unexpected advantage,None,None,test
+sitting duck,seated duck,easy target,None,None,test
+goose egg,duck egg,bump,zero score,None,test
+loan shark,debt fish,money lender,None,None,test
+busy bee,unavailable bee,busy person,None,None,test
+middle school,secondary school,None,None,None,test
+ancient history,history,in the past,None,None,test
+critical review,analysis,None,None,None,test
+top dog,best dog,leader,None,None,test
+entrance hall,front hall,None,None,None,test
+con artist,swindler,None,None,None,test
+labour union,workers union,None,None,None,test
+cellular phone,phone,None,None,None,test
+cooking stove,range,None,None,None,test
+computer program,software,None,None,None,test
+big fish,large fish,important person,None,None,test
+phone book,telephone directory,None,None,None,test
+narrow escape,close call,None,None,None,test
+mail service,postal service,None,None,None,test
+high life,expensive lifestyle,None,None,None,dev
+birth rate,birth statistic,None,None,None,dev
+home run,house run,baseball run,None,None,dev
+public service,service helping people,public help ,None,None,dev
+travel guide,guidebook,None,None,None,dev
+swan song,bird song,final performance,None,None,dev
+banana republic,fruit republic,politically unstable country,None,None,dev
+wedding anniversary,marriage celebration,None,None,None,dev
+bad apple,awful apple,troublemaker,None,None,dev
+panda car,bear car,police car,None,None,dev
+eager beaver,restless beaver,hard worker,None,None,dev
+rice paper,paddy notepad,wrapper,None,None,dev
+chain reaction,series of reactions,series of events,None,None,dev
+sex bomb,function explosive,sexy person,None,None,dev
+health check,health evaluation,None,None,None,dev
+cotton candy,fabric candy,fluffy candy,None,None,dev
+food market,grocery store,food commodity market,None,None,dev
+insurance company,insurance provider,None,None,None,dev
+pillow slip,pillow case,None,None,None,dev
+dust storm,sand storm,None,None,None,dev
+flower child,bloom child,hippie,None,None,dev
+economic aid,financial assistance,None,None,None,dev
+fish story,angle story,exaggerated story,None,None,dev
+dry land,dry ground,terra firma,None,None,dev
+private eye,personal eye,detective,None,None,dev
+bow tie,tie,None,None,None,dev
+closed book,shut book,mystery,None,None,dev
+mental disorder,psychological disorder,None,None,None,dev
+bad hat,terrible hat,trouble maker,None,None,dev
+life vest,existence vest,flotation device,lifeline,None,dev
+double dutch,double German,nonsense,None,None,train
+night owl,night hooter,nocturnal person,None,None,train
+blood bath,sanguine fluid bath,massacre,None,None,train
+fresh water,clean water,None,None,None,train
+fine line,thin line,subtle difference,None,None,train
+fall guy,drop guy,scapegoat,None,None,train
+marketing consultant,sales advisor,None,None,None,train
+crocodile tear,reptile tear,fake tears,None,None,train
+heavy cross,weighty cross,burden,None,None,train
+application form,form,None,None,None,train
+brain drain,cerebellum drain,loss of intellectuals,None,None,train
+small fry,little fry,insignificant,little kid,None,train
+law firm,lawyer,None,None,None,train
+ground floor,ground level,early stages,None,None,train
+snake oil,serpent oil,fake solution,None,None,train
+lotus position,lily position,yoga position,None,None,train
+smoke screen,screen,distraction,None,None,train
+injury time,trauma time,extra time,None,None,train
+white noise,snowy noise,static,distracting commotion,calming sounds,train
+hard shoulder,solid shoulder,emergency lane,football tackle,None,train
+melting pot,unfrozen pot,mixture,None,None,train
+grass root,herb root,ordinary people,None,None,train
+black box,dark box,opaque,flight recorder,None,train
+bull market,bull retail,rising market,None,None,train
+crime rate,crime levels,None,None,None,train
+number crunching,crunching,calculations,None,None,train
+radioactive material,hazardous substance,None,None,None,train
+football season,sport season,None,None,None,train
+case study,study,None,None,None,train
+big picture,large picture,whole situation,None,None,train
+music festival,shows,None,None,None,train
+eye candy,ocular candy,pleasing image,None,None,train
+ivory tower,tusk tower,privileged seclusion,None,None,train
+damp squib,humid squib,disapointment,None,None,train
+grandfather clock,granddad clock,clock,None,None,train
+baby blues,depression,blue eyes,None,None,train
+hard drive,solid drive,computer storage,None,None,train
+music journalist,music reporter,None,None,None,train
+cash cow,money cow,steady income,None,None,train
+contact lens,connection lens,eye lens,None,None,train
+graduate student,student,None,None,None,train
+honey trap,sweetener trap,lure,None,None,train
+nest egg,roost egg,monetary fund,None,None,train
+interest rate,profit rate,None,None,None,train
+silver spoon,metal spoon,privileged background,None,None,train
+glass ceiling,mirror ceiling,barrier,None,None,train
+pipe dream,tube dream,unrealistic,None,None,train
+beauty sleep,charm nap,sufficient restful sleep,None,None,train
+polo shirt,shirt,None,None,None,train
+double cross,two cross-mark,betrayal,None,None,train
+snail mail,gastropod mail,postal service,None,None,train
+graveyard shift,cemetery shift,night shift,None,None,train
+incubation period,time to incubate,development time,None,None,train
+agony aunt,suffering aunt,newspaper columnist,None,None,train
+swimming pool,pool,None,None,None,train
+fairy tale,sprite story,children's story,fabricated story,None,train
+human being,person,None,None,None,train
+blue blood,azure lifeblood,noble,None,None,train
+tear gas,teardrop gas,chemical weapon,None,None,train
+shelf life,expiration date,None,None,None,train
+flea market,fea retail ,secondhand market,None,None,train
+shrinking violet,contracting violet,shy person,None,None,train
+rat race,mouse race,exhausting routine,None,None,train
+gold mine,mine,source of fortune,None,None,train
+hot potato,blazing potato,controversial issue,awkward situation,None,train
+love song,romantic music,None,None,None,train
+brass ring,metal ring,prize,None,None,train
+bank account,bank fund,None,None,None,train
+acid test,acidic test,conclusive test,None,None,train
+freudian slip,Freud's slip,subconscious confession,None,None,train
+lip service,mouth service,insincere agreement,None,None,train
+cable car,trolley,None,None,None,train
+black operation,inky operation,covert operation,None,None,train
+climate change,change in climate,None,None,None,train
+backroom boy,private room boy,anonymous worker,None,None,train
+noise complaint,protest,None,None,None,train
+stag night,deer night,bachelor party,None,None,train
+calendar month,period,None,None,None,train
+traffic control,transportation management,None,None,None,train
+monkey business,ape business,mischievous behaviour,None,None,train
+big cheese,sizeable cheese,important entity,None,None,train
+guilt trip,regret jouney,feeling guilt,make feel guilty,None,train
+fair play,equal game,integrity,None,None,train
+research project,project,None,None,None,train
+day shift,daytime work,None,None,None,train
+web site,internet site,None,None,None,train
+rainy season,wet season,None,None,None,train
+medical procedure,operation,None,None,None,train
+double whammy,dual threat,None,None,None,train
+arcade game,video game,None,None,None,train
+rocket science,projectile knowledge,difficult problem,None,None,train
+computer expert,computer specialist,None,None,None,train
+basket case,basket,crazy person,in economic difficulties,None,train
+credit card,monetary card,None,None,None,train
+brick wall,wall,difficult obstacle,None,None,train
+ghost town,spectre town,abandoned town,None,None,train
+social insurance,government assistance,None,None,None,train
+civil marriage,legal marriage,None,None,None,train
+box office,crate office,movie industry,None,None,train
+end user,user,None,None,None,train
+cocoa butter,moisturizer,None,None,None,train
+silver screen,screen,cinema,None,None,train
+crash course,blast course,intensive course,None,None,train
+blind alley,unsighted alley,position without hope,lane without outlet,None,train
+speed trap,velocity trap,speed check,None,None,train
+job fair,career expo,None,None,None,train
+game plan,plan,None,None,None,train
+cloud nine,overcast nine,ecstatic,None,None,train
+cocktail dress,appetizer dress,formal dress,None,None,train
+pain killer,hurt killer,analgesics,None,None,train
+balance sheet,stability sheet,financial statement,None,None,train
+jet lag,plane interim,travel fatigue,None,None,train
+spelling bee,spelling contest,None,None,None,train
+big wig,large wig,important person,None,None,train
+head teacher,mind teacher,headmaster,None,None,train
+rush hour,busy time,None,None,None,train
+silver bullet,bullet,guaranteed solution,None,None,train
+smoking gun,smoky gun,conclusive evidence,None,None,train
+bankruptcy proceeding,court case,None,None,None,train
+spinning jenny,rotating donkey,thread maker,None,None,train
+information age,digital era,None,None,None,train
+academy award,school award,award,None,None,train
+health insurance,insurance,None,None,None,train
+biological clock,organic clock,life cycle,circadian rhythm,None,train
+memory lane,retention lane,past,None,None,train
+car park,car garden,parking lot,None,None,train
+field work,pasture work,practical acadamic work,temporary fortification,None,train
+smoking jacket,jacket for smoking,formal jacket,None,None,train
+copy cat,replicate cat,imitator,None,None,train
+white spirit,white alcohol,cleaning liquid,None,None,train
+insider trading,representative trading,illegal trading,None,None,train
+role model,function example,inspiration,None,None,train
+dark horse,black horse,unexpected winner,None,None,train
+winter solstice,shortest day,None,None,None,train
+dutch courage,hollannder courage,alcoholic courage,None,None,train
+couch potato,sofa potato,lazy person,None,None,train
+radioactive waste,toxic trash,None,None,None,train
+china clay,asia clay,fine clay,None,None,train
+radio station,radio broadcaster,None,None,None,train
+rock bottom,gravel bottom,worst situation,None,None,train
+zebra crossing,zebra junction,pedestrian crossing,None,None,train
+kangaroo court,marsupial court,unauthorized court,None,None,train
+head hunter,brain hunter,recruiter,baseball pitcher,hunter,train
+peace talk,tranquility talk,peace negotiation,None,None,train
+rat run,rodent run,small road,None,None,train
+low profile,flat profile,avoiding attention,None,None,train
+poison pill,poison tablet,takeover prevention strategy,None,None,train
+video game,game,None,None,None,train
+fashion plate,vogue plate,photo,fashion icon,None,train
+blame game,criticism game,exchanged accusations,None,None,train
+speed limit,maximum speed,None,None,None,train
+hen party,chicken party,bachelorette party,None,None,train
+world conference,global meeting,None,None,None,train
+front runner,forepart runner,favourite,None,None,train
+health care,preventive medicine,None,None,None,train
+leap year,jump year,bissextile year,None,None,train
+cutting edge,slicing edge,most advanced,None,None,train
+parking lot,car park,None,None,None,train
+gravy train,sauce train,easy income,None,None,train
+search engine,searching program,None,None,None,train
+best man,optimal man,groomsman,None,None,train
+cheat sheet,cheat page,quick reference,None,None,train
+pecking order,biting order,hiearchical order,None,None,train
