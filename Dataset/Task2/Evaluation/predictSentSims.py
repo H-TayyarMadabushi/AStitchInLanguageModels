@@ -50,7 +50,7 @@ if __name__ == '__main__' :
 
     ## Will predict similarities of sentence pairs that do NOT have MWEs providing a comparios for evaluation.
     ## This script should be run with a location to a sentence transformer model with updated tokenization.
-
+    ## e.g. git clone https://huggingface.co/harish/AStitchInLanguageModels-Task2_EN_SentTransTokenizedNoPreTrain (Use git lfs!) 
     if len( sys.argv ) < 2 :
         print( "This script should be run with a location to a sentence transformer model with updated tokenization." )
         
