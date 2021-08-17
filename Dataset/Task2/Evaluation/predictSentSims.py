@@ -13,10 +13,9 @@ from sentence_transformers.readers    import STSBenchmarkDataReader
 from sklearn.metrics                  import f1_score, accuracy_score
 from sklearn.metrics.pairwise         import paired_cosine_distances
 
-sys.path.append( '../../LanguageModeling/' )
-sys.path.append( '../' )
+sys.path.append( '../Utils/' )
 
-from createSampleTokenised            import _load_csv as load_csv
+from utils                            import _load_csv as load_csv
 
 def _get_sents( location ) :
 
