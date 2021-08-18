@@ -68,7 +68,7 @@ def _load_single_dataset_sents( location ) :
 
 def _load_dataset_sents( dataset_sents_info ) :
 
-    files = [ 'dev_sents.csv', 'test_sents.csv', 'train_from_dev_sents.csv', 'train_from_test_sents.csv', 'train_sents.csv' ]
+    files = [ 'dev_sents.csv', 'test_sents.csv', 'train_few_shot_sents.csv', 'train_zero_shot_sents.csv' ]
 
     sents = list()
     for file_name in files :
