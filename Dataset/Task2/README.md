@@ -3,6 +3,8 @@
 
 Task 2 is tests models' ability to accurately represent sentences regardless of whether or not they contain idiomatic expressions. This is tested using Semantic Text Similarity (STS) and the metric for this task is the Spearman Rank correlation between models' output STS between sentences containing idiomatic expressions and the same sentences with the idiomatic expressions replaced by non-idiomatic paraphrases (which capture the correct meaning of the MWEs). 
 
+We perform all training 5 times and pick the best performing model. 
+
 Please see the paper for more details on the task. 
 
 ## Table of Contents
@@ -93,8 +95,8 @@ We do this five times with different seeds and pick the model that performs the 
 
 ### Evaluation
 You can evaluate the pre-trained representations of MWEs using scripts in the folder [Task2/SubtaskA-Pre_Train/Evaluation](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Task2/SubtaskA-Pre_Train/Evaluation "Evaluation"). 
-* We each of the best models from the previous steps using the script [ask2SubtaskAEvaluation.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskA-Pre_Train/Evaluation/task2SubtaskAEvaluation.py "task2SubtaskAEvaluation.py")
-* You can run all the tests (default model, default model with special MWE tokenization, and models pre-trained with "all" and "select" pre-training data using the script [eval.sh](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskA-Pre_Train/Evaluation/eval.sh "eval.sh"). [Please see paper for explanation on each of these four variations]
+* We test each of the best models from the previous steps using the script [task2SubtaskAEvaluation.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskA-Pre_Train/Evaluation/task2SubtaskAEvaluation.py "task2SubtaskAEvaluation.py")
+* You can run all the tests (default model, default model with special MWE tokenization, and models pre-trained with "all" and "select" pre-training data using the script [eval.sh](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskA-Pre_Train/Evaluation/eval.sh "eval.sh"). [Please see paper for an explanation of each of these four variations]
 
 ## Subtask B - Fine-Tuning for Idiom Representation
 
