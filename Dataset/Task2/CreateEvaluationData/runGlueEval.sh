@@ -22,8 +22,8 @@ do
 	   --output_dir      $outlocation \
 	   --seed 42 \
 	   --test_file       $test_file \
-     --train_file  /content/AStitchInLanguageModels/Dataset/Task1/SubTaskA/EN/ContextExcluded_IdiomIncluded/train_one_shot.csv  \
-     --validation_file /content/AStitchInLanguageModels/Dataset/Task1/SubTaskA/EN/ContextExcluded_IdiomIncluded/dev.csv \
+	   --train_file  ../../Task1/SubTaskA/EN/ContextExcluded_IdiomIncluded/train_one_shot.csv \
+	   --validation_file ../../Task1/SubTaskA/EN/ContextExcluded_IdiomIncluded/dev.csv \
 	   --ignore_data_skip \
 	   --overwrite_output_dir 	
 
