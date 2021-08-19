@@ -2,14 +2,13 @@ import os
 import csv
 import sys
 
-from collections             import defaultdict
+from collections  import defaultdict
 
-sys.path.append( '../../LanguageModeling/' )
-sys.path.append( '../' )
+sys.path.append( '../../Utils/' )
 
-from tokeniseIdiom           import tokenise_idiom as idiom_tokeniser
-from createForDevTest        import match_idioms, create_idiom_word_dict
-from createSampleTokenised   import _load_csv as load_csv
+from utils        import tokenise_idiom as idiom_tokeniser
+from utils        import match_idioms, create_idiom_word_dict
+from utils        import _load_csv as load_csv
 
 def _get_sents( location ) :
 
