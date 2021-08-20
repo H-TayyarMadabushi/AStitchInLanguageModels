@@ -124,7 +124,7 @@ The models trained above can be evaluated (all three variations - with no specia
 
 The following shell script provides all the required commands: [Task2/SubtaskB-Fine_Tune/Evaluation/evalTask2B.sh](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskB-Fine_Tune/Evaluation/evalTask2B.sh "evalTask2B.sh")
 
-## Pre-Trained Models made Available.
+## Pre-Trained and Fine-Tuned Models
 
 In addition to all the data, we also make the following pre-trained models available: 
 
