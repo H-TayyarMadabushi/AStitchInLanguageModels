@@ -17,11 +17,11 @@ In addition, we use this dataset to define two tasks:
 
 ## Table of Contents
 
-* [Prerequisites]
+* [Prerequisites](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#prerequisites)
 * [Task 1: Idiomaticity Detection](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels#task-1-idiomaticity-detection)
 * [Task 2: Idiomaticity Representation](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels#task-2-idiomaticity-representation)
 * [Extended Noun Compound Senses Dataset](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels#extended-noun-compound-senses-dataset)
-* [Task Independent Data]
+* [Task Independent Data](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#task-independent-data)
 
 ## Prerequisites 
 
@@ -125,9 +125,8 @@ Please see the [associated data folder](https://github.com/H-TayyarMadabushi/ASt
 
 ## Task Independent Data
 
-You can download the Task independent annotated data from [this folder](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/TaskIndependentData). 
+You can download the Task independent annotated data from [this folder](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/TaskIndependentData). The data format is described in the README available in the same folder. 
 
 Where possible, please use the training, development and test splits provided so results can remain comparable.
 
-The data format is described in the [data folder](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/TaskIndependentData). 
 
