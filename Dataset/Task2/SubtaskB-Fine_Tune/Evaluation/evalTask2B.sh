@@ -17,7 +17,7 @@ do
 
     python task2Evaluation.py \
 	   "${baselocation}/${epoch}/" \
-	   "../../CreateEvaluationData/EN/WithResults/${language}/evalData/"
+	   "../../CreateEvaluationData/${language}/WithResults/evalData/"
 done
 
 
@@ -31,7 +31,7 @@ do
 
     python task2Evaluation.py \
 	   "${baselocation}/${epoch}/" \
-	   "../../CreateEvaluationData/EN/WithResults/${language}/evalDataAllTokenised/"
+	   "../../CreateEvaluationData/${language}/WithResults/evalDataAllTokenised/"
 done
 
 ### Select
@@ -44,6 +44,6 @@ do
 
     python task2Evaluation.py \
 	   "${baselocation}/${epoch}/" \
-	   "../../CreateEvaluationData/EN/WithResults/${language}/evalDataSelectTokenised/"
+	   "../../CreateEvaluationData/${language}/WithResults/evalDataSelectTokenised/"
 done
 
