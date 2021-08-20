@@ -3,7 +3,7 @@
 
 Task 2 is tests models' ability to accurately represent sentences regardless of whether or not they contain idiomatic expressions. This is tested using Semantic Text Similarity (STS) and the metric for this task is the Spearman Rank correlation between models' output STS between sentences containing idiomatic expressions and the same sentences with the idiomatic expressions replaced by non-idiomatic paraphrases (which capture the correct meaning of the MWEs). 
 
-We perform all training 5 times and pick the best performing model. 
+We perform all training 5 times with different random seeds and pick the best performing model. 
 
 Please see the paper for more details on the task. 
 
@@ -23,6 +23,7 @@ Please see the paper for more details on the task.
 	* [Create Fine-Tuning Data](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#create-fine-tuning-data)
 	* [Fine-Tuning](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#fine-tuning)
 	* [Evaluation](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#evaluation-1)
+- [Pre-Trained and Fine-Tuned Models](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#pre-trained-and-fine-tuned-models)
 
 
 
@@ -114,7 +115,7 @@ Fine-tuning data can be created using the scripts in the folder [Task2/SubtaskB-
 
 The data created above can now be used to train model a sentence transformer model. 
 
-**IMPORTANT**: We must start with a model that is already trained on the non-idiomatic STS data as described in the section [Creating Sentence Transformers models] above. The model should be able to handle the special tokens that use for idioms. 
+**IMPORTANT**: We must start with a model that is already trained on the non-idiomatic STS data as described in the section [Creating Sentence Transformers models](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#creating-sentence-transformers-models) above. The model should be able to handle the special tokens that use for idioms. 
 
 The script [Task2/SubtaskB-Fine_Tune/FineTune/stsTrainer.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskB-Fine_Tune/FineTune/stsTrainer.py "stsTrainer.py") can be used to perform this fine tuning for all variations (no tokenization, "select" tokenization, and "all" tokenization"). 
 
@@ -126,7 +127,9 @@ The following shell script provides all the required commands: [Task2/SubtaskB-F
 
 ## Pre-Trained and Fine-Tuned Models
 
-In addition to all the data, we also make the following pre-trained models available: 
+The following models associated with Task 2 are publicly available. When training models, we train each 5 times with a different random seed and pick the best performing model (available here). 
+
+**NOTE**: Please note that Sentence Transformer models can't be directly used with the 🤗 Transformers link. They need to be downloaded to local disk (using git clone) before being used. Please remember to use git lfs! 
 
 | No. | 🤗 Transformers Name | Lang | Subtask | Details |
 |--|--|--|--|--|
