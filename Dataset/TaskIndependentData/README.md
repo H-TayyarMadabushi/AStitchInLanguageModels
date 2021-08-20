@@ -1,9 +1,8 @@
 
-# Raw Data
 
-We strongly recommend that you use the Task datasets described above if you are working on related tasks. We also recommend that you use the associated data splits to keep results comparable. 
+# TaskIndependentData
 
-If you working on an unrelated task, you can adapt the raw data provided here. 
+Where possible, please use the training, development and test splits provided so results can remain comparable.
 
 The data format is as follows: 
 
@@ -16,7 +15,7 @@ Each data split (test, dev, ...) has an associated list which represents data as
 * Non-literal meaning 3 (or None)
 * Proper Noun (As all MWEs can be used as proper nouns)
 * Meta Usage (As all MWEs can be used in this way - please see paper for details)
-* 0/1 (If this example is literal, i.e. 1)
+* 0/1 (1 if this example is not idiomatic, i.e. 1 includes Proper noun and Meta usage)
 * The fine grained label associated with this example. 
 * The sentence prior to the target sentence containing the MWE. 
 * The sentence containing the MWE
