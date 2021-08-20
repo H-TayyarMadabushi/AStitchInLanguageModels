@@ -1,9 +1,8 @@
 
-# Raw Data
 
-We strongly recommend that you use the Task datasets described above if you are working on related tasks. We also recommend that you use the associated data splits to keep results comparable. 
+# TaskIndependentData
 
-If you working on an unrelated task, you can adapt the raw data provided here. 
+Where possible, please use the training, development and test splits provided so results can remain comparable.
 
 The data format is as follows: 
 
