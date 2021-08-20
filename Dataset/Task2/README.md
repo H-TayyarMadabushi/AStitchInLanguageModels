@@ -50,7 +50,7 @@ Here are the steps to create a Sentence Transformer Model:
 
 ## Creating the Evaluation Data
 
-Since this task requires models to be self consistent, we need to create evaluation data using a model that outputs semantic text similarity (such as the one trained above). 
+Since this task requires models to be self consistent, we need to create evaluation data (or format it for use in our models) using a model that outputs semantic text similarity (such as the one trained above). 
 
 This is done using scripts in the folder [CreateEvaluationData](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Task2/CreateEvaluationData "CreateEvaluationData"). 
 * Start with the evaluation data available in the "NoResults" folders for [EN](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Task2/CreateEvaluationData/EN/NoResults/evalData "This path skips through empty directories") and [PT](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Task2/CreateEvaluationData/PT/NoResults/evalData "This path skips through empty directories"). These folders contain additional information regarding tokenization (for select tokenize and all tokenize) and similarities (which is what we need to ensure consistency). This data is created using the script [createEvalData.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/CreateEvaluationData/createEvalData.py "createEvalData.py"), but it is NOT recommended that you run this script as it might generate a slightly different dataset based on your random number generator.
@@ -85,7 +85,7 @@ This step (also) is only required when not using the pre-training data made avai
 Once the evaluation data and pre-training data have been created and the models have been modified to include single tokens for idioms, these scripts can be used for pre-training and evaluation. 
 
 ### Pre-Training 
-* Run [preTrain.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskA-Pre_Train/preTrain.py "preTrain.py") to continue pre-training from an existing  🤗 Transformers checkpoint. The model used must have tokens associated with MWEs inserted as described in section [Adding Idiom Tokens to 🤗 Transformers Models](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#adding-idiom-tokens-to--transformers-models) above. 
+* Run [preTrain.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskA-Pre_Train/preTrain.py "preTrain.py") to **continue pre-training** from an existing  🤗 Transformers checkpoint (we do not train from scratch). The model used must have tokens associated with MWEs inserted as described in section [Adding Idiom Tokens to 🤗 Transformers Models](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#adding-idiom-tokens-to--transformers-models) above. 
 
 ### Converting to Sentence Transformer Models
 
@@ -95,13 +95,39 @@ We do this five times with different seeds and pick the model that performs the 
 
 ### Evaluation
 You can evaluate the pre-trained representations of MWEs using scripts in the folder [Task2/SubtaskA-Pre_Train/Evaluation](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Task2/SubtaskA-Pre_Train/Evaluation "Evaluation"). 
-* We test each of the best models from the previous steps using the script [task2SubtaskAEvaluation.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskA-Pre_Train/Evaluation/task2SubtaskAEvaluation.py "task2SubtaskAEvaluation.py")
-* You can run all the tests (default model, default model with special MWE tokenization, and models pre-trained with "all" and "select" pre-training data using the script [eval.sh](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskA-Pre_Train/Evaluation/eval.sh "eval.sh"). [Please see paper for an explanation of each of these four variations]
+* We test each of the best models from the previous steps using the common script for task 2 evaluation ([task2Evaluation.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/Evaluation/task2Evaluation.py "task2Evaluation.py")). 
+* You can run all the tests (default model, default model with special MWE tokenization, and models pre-trained with "all" and "select" pre-training data using the script [SubtaskA-Pre_Train/Evaluation/eval.sh](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskA-Pre_Train/Evaluation/eval.sh "eval.sh"). Be sure to update the path of the models. [Please see paper for an explanation of each of these four variations]
 
 ## Subtask B - Fine-Tuning for Idiom Representation
 
+Fine-tuning models to better represent idioms also requires creating training data (or formatting training data) in a manner similar to that of creating/formatting evaluation data. This section describes the steps required in formatting the training data, training models and finally the evaluation. 
+
 ### Create Fine-Tuning Data
+
+Fine-tuning data can be created using the scripts in the folder [Task2/SubtaskB-Fine_Tune/CreateFineTuneData](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Task2/SubtaskB-Fine_Tune/CreateFineTuneData "CreateFineTuneData"). 
+* [createFineTuneData.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskB-Fine_Tune/CreateFineTuneData/createFineTuneData.py "createFineTuneData.py") extracts data from the raw json files along with creating files for predicting idiomaticity (required for "all" tokenized and "select" tokenized) and sentences similarity (required for ensuring self consistency). 
+* [predictSentSims.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskB-Fine_Tune/CreateFineTuneData/predictSentSims.py "predictSentSims.py") will predict sentence similarity. This script uses a Sentence Transformers model with idiom tokens added (see section Creating Sentence Transformers models and Adding Idiom Tokens to 🤗 Transformers Models). 
+* Run [runGlueForTrainData.sh](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskB-Fine_Tune/CreateFineTuneData/runGlueForTrainData.sh "runGlueForTrainData.sh") with the model used to identify idioms to differentiate between "all" tokenized and "select" tokenized (we use the one-shot model from Task 1 A)
+* [combineCreateFinalTrainData.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskB-Fine_Tune/CreateFineTuneData/combineCreateFinalTrainData.py "combineCreateFinalTrainData.py") combines all the different files and creates the final training data for all three variations (no tokenization change, idioms always replaced with new tokens, idioms replaced by new tokens only when we identify the usage as idiomatic). 
 
 ### Fine-Tuning
 
+The data created above can now be used to train model a sentence transformer model. 
+
+**IMPORTANT**: We must start with a model that is already trained on the non-idiomatic STS data as described in the section [Creating Sentence Transformers models] above. The model should be able to handle the special tokens that use for idioms. 
+
+The script [Task2/SubtaskB-Fine_Tune/FineTune/stsTrainer.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskB-Fine_Tune/FineTune/stsTrainer.py "stsTrainer.py") can be used to perform this fine tuning for all variations (no tokenization, "select" tokenization, and "all" tokenization"). 
+
 ### Evaluation
+
+The models trained above can be evaluated (all three variations - with no special tokenization, with "all" idioms tokenized, with only those instances of idioms identified to be idiomatic "select" tokenized ) using the same evaluation script: [Task2/Evaluation/task2Evaluation.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/Evaluation/task2Evaluation.py "task2Evaluation.py")
+
+The following shell script provides all the required commands: [Task2/SubtaskB-Fine_Tune/Evaluation/evalTask2B.sh](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskB-Fine_Tune/Evaluation/evalTask2B.sh "evalTask2B.sh")
+
+## Pre-Trained Models made Available.
+
+In addition to all the data, we also make the following pre-trained models available: 
+
+| 🤗 Transformers Name | Details |
+|--|--|
+| name | update |
