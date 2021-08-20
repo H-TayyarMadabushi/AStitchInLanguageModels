@@ -3,7 +3,7 @@
 
 Task 2 is tests models' ability to accurately represent sentences regardless of whether or not they contain idiomatic expressions. This is tested using Semantic Text Similarity (STS) and the metric for this task is the Spearman Rank correlation between models' output STS between sentences containing idiomatic expressions and the same sentences with the idiomatic expressions replaced by non-idiomatic paraphrases (which capture the correct meaning of the MWEs). 
 
-We perform all training 5 times and pick the best performing model. 
+We perform all training 5 times with different random seeds and pick the best performing model. 
 
 Please see the paper for more details on the task. 
 
@@ -23,6 +23,7 @@ Please see the paper for more details on the task.
 	* [Create Fine-Tuning Data](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#create-fine-tuning-data)
 	* [Fine-Tuning](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#fine-tuning)
 	* [Evaluation](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#evaluation-1)
+- [Pre-Trained and Fine-Tuned Models](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#pre-trained-and-fine-tuned-models)
 
 
 
@@ -114,7 +115,7 @@ Fine-tuning data can be created using the scripts in the folder [Task2/SubtaskB-
 
 The data created above can now be used to train model a sentence transformer model. 
 
-**IMPORTANT**: We must start with a model that is already trained on the non-idiomatic STS data as described in the section [Creating Sentence Transformers models] above. The model should be able to handle the special tokens that use for idioms. 
+**IMPORTANT**: We must start with a model that is already trained on the non-idiomatic STS data as described in the section [Creating Sentence Transformers models](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/README.md#creating-sentence-transformers-models) above. The model should be able to handle the special tokens that use for idioms. 
 
 The script [Task2/SubtaskB-Fine_Tune/FineTune/stsTrainer.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskB-Fine_Tune/FineTune/stsTrainer.py "stsTrainer.py") can be used to perform this fine tuning for all variations (no tokenization, "select" tokenization, and "all" tokenization"). 
 
@@ -124,10 +125,31 @@ The models trained above can be evaluated (all three variations - with no specia
 
 The following shell script provides all the required commands: [Task2/SubtaskB-Fine_Tune/Evaluation/evalTask2B.sh](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/SubtaskB-Fine_Tune/Evaluation/evalTask2B.sh "evalTask2B.sh")
 
-## Pre-Trained Models made Available.
+## Pre-Trained and Fine-Tuned Models
 
-In addition to all the data, we also make the following pre-trained models available: 
+The following models associated with Task 2 are publicly available. When training models, we train each 5 times with a different random seed and pick the best performing model (available here). 
 
-| 🤗 Transformers Name | Details |
-|--|--|
-| name | update |
+**NOTE**: Please note that Sentence Transformer models can't be directly used with the 🤗 Transformers link. They need to be downloaded to local disk (using git clone) before being used. Please remember to use git lfs! 
+
+| No. | 🤗 Transformers Name | Lang | Subtask | Details |
+|--|--|--|--|--|
+| 1 | [harish/AStitchInLanguageModels-Task2_EN_BERTTokenizedNoPreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_EN_BERTTokenizedNoPreTrain) | EN | A | BERT Base with tokenizer  updated to handle MWEs as single tokens. **No additional pre-training**. |
+| 2 | [harish/AStitchInLanguageModels-Task2_EN_BERTTokenizedALLReplacePreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_EN_BERTTokenizedALLReplacePreTrain) | EN | A | BERT Base with tokenizer  updated to handle MWEs as single tokens and additionally pre-trained using the "**ALL Replace**" strategy. | 
+| 3 | [harish/AStitchInLanguageModels-Task2_EN_BERTTokenizedSelectReplacePreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_EN_BERTTokenizedSelectReplacePreTrain) | EN | A | BERT Base with tokenizer  updated to handle MWEs as single tokens and additionally pre-trained using the "**Select Replace**" strategy. |
+| 4 | [harish/AStitchInLanguageModels-Task2_EN_SentTransTokenizedNoPreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_EN_SentTransTokenizedNoPreTrain) | EN | A | Model No. 1 above converted to Sentence Transformer model with STS training | 
+| 5 | [harish/AStitchInLanguageModels-Task2_EN_SentTransALLReplacePreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_EN_SentTransALLReplacePreTrain) | EN | A | Model No. 2 above converted to Sentence Transformer model with STS training | 
+| 6 | [harish/AStitchInLanguageModels-Task2_EN_SentTransSelectReplacePreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_EN_SentTransSelectReplacePreTrain) | EN | A | Model No. 3 above converted to Sentence Transformer model with STS training |
+||||||
+| 7 | [harish/AStitchInLanguageModels-Task2_PT_mBERTTokenizedNoPreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_PT_mBERTTokenizedNoPreTrain) | PT | A | Multilingual BERT Base with tokenizer updated to handle MWEs as single tokens. **No additional pre-training**. |
+| 8 | [harish/AStitchInLanguageModels-Task2_PT_mBERTTokenizedALLReplacePreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_PT_mBERTTokenizedALLReplacePreTrain) | PT | A | Multilingual BERT Base with tokenizer  updated to handle MWEs as single tokens and additionally pre-trained using the "**ALL Replace**" strategy. | 
+| 9 | [harish/AStitchInLanguageModels-Task2_PT_mBERTTokenizedSelectReplacePreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_PT_mBERTTokenizedSelectReplacePreTrain) | PT | A | Multilingual BERT Base with tokenizer  updated to handle MWEs as single tokens and additionally pre-trained using the "**Select Replace**" strategy. |
+| 10 | [harish/AStitchInLanguageModels-Task2_PT_SentTransTokenizedNoPreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_PT_SentTransTokenizedNoPreTrain) | PT | A | Model No. 7 above converted to Sentence Transformer model with (PT) STS training | 
+|11| [harish/AStitchInLanguageModels-Task2_PT_SentTransALLReplacePreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_PT_SentTransALLReplacePreTrain) | PT | A | Model No. 8 above converted to Sentence Transformer model with (PT) STS training | 
+|12| [harish/AStitchInLanguageModels-Task2_PT_SentTransSelectReplacePreTrain](https://huggingface.co/harish/AStitchInLanguageModels-Task2_PT_SentTransSelectReplacePreTrain) | PT | A | Model No. 9 above converted to Sentence Transformer model with (PT) STS training |
+||||||
+|13|[harish/AStitchInLanguageModels-Task2_EN_SentTransDefaultFineTuned](https://huggingface.co/harish/AStitchInLanguageModels-Task2_EN_SentTransDefaultFineTuned) | EN | B | Sentence Transformer with **default tokenization** fine tuned on idiomatic STS data | 
+|14 | [harish/AStitchInLanguageModels-Task2_EN_SentTransAllTokenizedFineTuned](https://huggingface.co/harish/AStitchInLanguageModels-Task2_EN_SentTransAllTokenizedFineTuned) | EN | B | Sentence Transformer with special idiom tokenization fine tuned on idiomatic STS data tokenized using the "**ALL replace**" strategy. | 
+| 15 | [harish/AStitchInLanguageModels-Task2_EN_SentTransSelectTokenizedFineTuned](https://huggingface.co/harish/AStitchInLanguageModels-Task2_EN_SentTransSelectTokenizedFineTuned) | EN | B | Sentence Transformer with special idiom tokenization fine tuned on idiomatic STS data tokenized using the "**Select replace**" strategy. | 
+| 16 | [harish/AStitchInLanguageModels-Task2_PT_SentTransDefaultFineTuned](https://huggingface.co/harish/AStitchInLanguageModels-Task2_PT_SentTransDefaultFineTuned) | PT | B | Sentence Transformer with **default tokenization** fine tuned on idiomatic (PT) STS data | 
+| 17 | [harish/AStitchInLanguageModels-Task2_PT_SentTransAllTokenizedFineTuned](https://huggingface.co/harish/AStitchInLanguageModels-Task2_PT_SentTransAllTokenizedFineTuned) | PT | B | Sentence Transformer with special idiom tokenization fine tuned on (PT) idiomatic STS data tokenized using the "**ALL replace**" strategy. | 
+| 18 | [harish/AStitchInLanguageModels-Task2_PT_SentTransSelectTokenizedFineTuned](https://huggingface.co/harish/AStitchInLanguageModels-Task2_PT_SentTransSelectTokenizedFineTuned) | PT | B | Sentence Transformer with special idiom tokenization fine tuned on (PT) idiomatic STS data tokenized using the "**Select replace**" strategy. | 
