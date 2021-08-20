@@ -17,10 +17,46 @@ In addition, we use this dataset to define two tasks:
 
 ## Table of Contents
 
+* [Prerequisites]
 * [Task 1: Idiomaticity Detection](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels#task-1-idiomaticity-detection)
 * [Task 2: Idiomaticity Representation](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels#task-2-idiomaticity-representation)
 * [Extended Noun Compound Senses Dataset](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels#extended-noun-compound-senses-dataset)
 * [Task Independent Data]
+
+## Prerequisites 
+
+The scripts in this package have been tested using Python 3.8.6 and PyTorch 1.7.1. The additionally require the following packages. Please note that this will overwrite existing versions of your package. For this reason we suggest you use a [virtual environment](https://docs.python.org/3/library/venv.html).
+
+### Install the location version of Sentence Transformers
+While we use [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) to generate sentence embeddings that can be compared using cosine similarity, we make some changes to ensure that it can use custom tokenizers. Please install the location version available at [dependencies/sentence-transformers](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/dependencies/sentence-transformers "This path skips through empty directories"). 
+
+```bash 
+cd AStitchInLanguageModels/tree/main/dependencies/sentence-transformers
+pip3 install -e . 
+```
+
+### Editable version of 🤗 Transformers (4.7.0.dev0)
+
+Download version 4.7.0 from [here](https://github.com/huggingface/transformers/releases/tag/v4.7.0).
+```bash
+cd transformers-4.7.0
+pip3 install -e . 
+```
+
+
+### Other dependencies
+
+```bash
+pip3 install datasets==1.6.1
+pip3 install tqdm==4.49.0
+pip3 install nltk==3.6.2
+```
+And from your Python prompt:
+```python
+>>> import nltk
+>>> nltk.download('punkt')
+```
+
 
 ## Task 1: Idiomaticity Detection
 
