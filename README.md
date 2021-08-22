@@ -31,7 +31,7 @@ The scripts in this package have been tested using Python 3.8.6 and PyTorch 1.7.
 While we use [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) to generate sentence embeddings that can be compared using cosine similarity, we make some changes to ensure that it can use custom tokenizers. Please install the location version available at [dependencies/sentence-transformers](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/dependencies/sentence-transformers "This path skips through empty directories"). 
 
 ```bash 
-cd AStitchInLanguageModels/tree/main/dependencies/sentence-transformers
+cd AStitchInLanguageModels/dependencies/sentence-transformers
 pip3 install -e . 
 ```
 
