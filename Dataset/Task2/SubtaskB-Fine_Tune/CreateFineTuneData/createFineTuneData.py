@@ -121,7 +121,7 @@ if __name__ == '__main__' :
     language = sys.argv[1]
     assert language.lower() in [ 'en', 'pt' ]
 
-    json_location = '../../../TaskIndependentData/' + language.lower() + '_raw_data.json'
+    json_location = '../../../TaskIndependentData/' + language.lower() + '_TaskIndependentData.json'
     # [ 'train_one_shot', 'train_few_shot', 'train_zero_shot' ]
 
     print( "WARNING: Using Few Shot data - edit here to change to one_shot" )
