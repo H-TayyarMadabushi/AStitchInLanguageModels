@@ -59,7 +59,8 @@ def create_data( json_location, out_location, datasets, force_idiomatic, tokenis
 
             if len( not_label ) == 0 :
                 continue
-            
+
+            ### Should this be flags=re.I below ?
             not_label      = random.choice( not_label                     )
             this_correct   = re.sub( this_idiom, label, this_sentence     )
             this_incorrect = re.sub( this_idiom, not_label, this_sentence )
