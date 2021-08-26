@@ -34,7 +34,7 @@ Since we explore the impact of tokenizing MWEs as single tokens (the idiom princ
 This is done using scripts in the [Tokenize folder](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Task2/Tokenize).  
 
 * [downloadModels.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/Tokenize/downloadModels.py "downloadModels.py") will download the required model from 🤗 Transformers.
-* [updateVocab.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/Tokenize/updateVocab.py "updateVocab.py") updates the vocabulary of the model (This uses the "unused" tokens so currently only works for BERT and mBERT. Use tokenizer.add_tokens as described [here](https://github.com/huggingface/tokenizers/issues/507#issuecomment-722275904) for a generic solution. 
+* [updateVocab.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/Tokenize/updateVocab.py "updateVocab.py") updates the vocabulary of the model (This uses the "unused" tokens so currently only works for BERT and mBERT. Use tokenizer.add_tokens as described [here](https://huggingface.co/transformers/v2.11.0/main_classes/tokenizer.html#transformers.PreTrainedTokenizer.add_tokens) for a generic solution. 
 *  [tokenCheck.py](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/Tokenize/tokenCheck.py "tokenCheck.py") will run a check to ensure that the tokenizer now tokenizes idioms with a single token. 
 
 
