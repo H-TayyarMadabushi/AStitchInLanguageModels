@@ -433,8 +433,8 @@ def main():
         else:
             return {
                 "accuracy": (preds == p.label_ids).astype(np.float32).mean().item() , 
+                "f1": f1_score(y_true, y_pred, average='binary') , 
                 "f1_weighted": f1_score(y_true, y_pred, average='weighted') , 
-                "f1_binary": f1_score(y_true, y_pred, average='binary') , 
             }
 
     # Data collator will default to DataCollatorWithPadding, so we change it if we already did the padding.
