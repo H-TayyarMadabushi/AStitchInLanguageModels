@@ -5,6 +5,8 @@ This package contains the dataset AStitchInLanguageModels and associated task in
 
 This dataset and associated tasks were introduced in our EMNLP 2021 paper "AStitchInLanguageModels: Dataset and Methods for the Exploration of Idiomaticity in Pre-Trained Language Models". Please cite this paper if you use any of the data or methods from this package. 
 
+**The paper will be made available by the 9th of September**
+
 This is a novel dataset consisting of: 
 * Naturally occurring sentences (and two surrounding sentences) containing potentially idiomatic MWEs annotated with a fine-grained set of meanings: compositional meaning, idiomatic meaning(s), proper noun and "meta usage". See Tasks ([Task 1](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#task-1-idiomaticity-detection), [Task 2](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#task-2-idiomaticity-representation)) for details and Raw Data Section for complete data.
 * Data in both Portuguese and English
