@@ -3,7 +3,7 @@
 
 This package contains the dataset AStitchInLanguageModels and associated task information. 
 
-This dataset and associated tasks were introduced in our EMNLP 2021 paper "AStitchInLanguageModels: Dataset and Methods for the Exploration of Idiomaticity in Pre-Trained Language Models". Please cite this paper if you use any of the data or methods from this package. 
+This dataset and associated tasks were introduced in our (findings of) EMNLP 2021 paper "[AStitchInLanguageModels: Dataset and Methods for the Exploration of Idiomaticity in Pre-Trained Language Models](https://arxiv.org/abs/2109.04413)". Please cite this paper if you use any of the data or methods from this package. 
 
 **The paper will be made available by the 9th of September**
 
@@ -131,4 +131,17 @@ You can download the Task independent annotated data from [this folder](https://
 
 Where possible, please use the training, development and test splits provided so results can remain comparable.
 
+## Citation
 
+If you make use of this work, please cite us: 
+
+```bibtex
+@misc{tayyarmadabushi2021astitchinlanguagemodels,
+      title={AStitchInLanguageModels: Dataset and Methods for the Exploration of Idiomaticity in Pre-Trained Language Models}, 
+      author={Harish Tayyar Madabushi and Edward Gow-Smith and Carolina Scarton and Aline Villavicencio},
+      year={2021},
+      eprint={2109.04413},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
