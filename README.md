@@ -67,7 +67,7 @@ The first task we propose is designed to evaluate the extent to which models can
 
 The data associated with this Task can be found in [this folder](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/tree/main/Dataset/Task1). Data is split into zero-shot, one-shot and few-shot data in both Portuguese and English. Please see the paper for a detailed description of the task and methods. 
 
-We used 🤗 Transformers ([this script](https://github.com/huggingface/transformers/blob/62ba3b6b43975e759851336b566852252be00669/examples/pytorch/text-classification/run_glue.py), locally [available here](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/Utils/run_glue.py "run_glue.py")) for training with the following hyperparameters. Further details are available in the paper. 
+We used 🤗 Transformers ([this script](https://github.com/huggingface/transformers/blob/62ba3b6b43975e759851336b566852252be00669/examples/pytorch/text-classification/run_glue.py), local copy with F1 evaluation [available here](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/Dataset/Task2/Utils/run_glue_f1_macro.py)) for training with the following hyperparameters. Further details are available in the paper. 
 
 
 ```bash
