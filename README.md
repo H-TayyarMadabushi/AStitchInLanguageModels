@@ -3,7 +3,7 @@
 
 This package contains the dataset AStitchInLanguageModels and associated task information. 
 
-This dataset and associated tasks were introduced in our (findings of) EMNLP 2021 paper "[AStitchInLanguageModels: Dataset and Methods for the Exploration of Idiomaticity in Pre-Trained Language Models](https://arxiv.org/abs/2109.04413)". Please cite this paper if you use any of the data or methods from this package. 
+This dataset and associated tasks were introduced in our (findings of) EMNLP 2021 paper "[AStitchInLanguageModels: Dataset and Methods for the Exploration of Idiomaticity in Pre-Trained Language Models](https://arxiv.org/abs/2109.04413)". Please [cite](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#citation) this paper if you use any of the data or methods from this package. 
 
 **The paper will be made available by the 9th of September**
 
@@ -24,6 +24,7 @@ In addition, we use this dataset to define two tasks:
 * [Task 2: Idiomaticity Representation](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels#task-2-idiomaticity-representation)
 * [Extended Noun Compound Senses Dataset](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels#extended-noun-compound-senses-dataset)
 * [Task Independent Data](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#task-independent-data)
+* [Citation] (https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#citation)
 
 ## Prerequisites 
 
