@@ -24,7 +24,7 @@ In addition, we use this dataset to define two tasks:
 * [Task 2: Idiomaticity Representation](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels#task-2-idiomaticity-representation)
 * [Extended Noun Compound Senses Dataset](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels#extended-noun-compound-senses-dataset)
 * [Task Independent Data](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#task-independent-data)
-* [Citation] (https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#citation)
+* [Citation](https://github.com/H-TayyarMadabushi/AStitchInLanguageModels/blob/main/README.md#citation)
 
 ## Prerequisites 
 
