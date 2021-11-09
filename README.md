@@ -137,12 +137,17 @@ Where possible, please use the training, development and test splits provided so
 If you make use of this work, please cite us: 
 
 ```bibtex
-@misc{tayyarmadabushi2021astitchinlanguagemodels,
-      title={AStitchInLanguageModels: Dataset and Methods for the Exploration of Idiomaticity in Pre-Trained Language Models}, 
-      author={Harish Tayyar Madabushi and Edward Gow-Smith and Carolina Scarton and Aline Villavicencio},
-      year={2021},
-      eprint={2109.04413},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-```
+@inproceedings{tayyar-madabushi-etal-2021-astitchinlanguagemodels-dataset,
+    title = "{AS}titch{I}n{L}anguage{M}odels: Dataset and Methods for the Exploration of Idiomaticity in Pre-Trained Language Models",
+    author = "Tayyar Madabushi, Harish  and
+      Gow-Smith, Edward  and
+      Scarton, Carolina  and
+      Villavicencio, Aline",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.294",
+    pages = "3464--3477",
+}```
